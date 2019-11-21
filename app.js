@@ -13,6 +13,7 @@ $(() => {
         $.getJSON(url, parameters, (response) => {
             showResults(response.response.docs);
         });
+        function showResults(articlesearch) {
        
 
 
@@ -28,7 +29,7 @@ $(() => {
                 $('#results').append(`<p>${value.web_url}</p>`);
                 $('#results').append(`<p>${value.pub_date}</p>`);
             });
-        
+         }
 
     }
 
